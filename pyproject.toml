@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cli-poetry-app"
+version = "0.1.0"
+description = ""
+authors = ["vduzh <vduzh@tut.by>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+click = "^8.1.7"
+pytest = "^8.2.2"
+
+[tool.poetry.scripts]
+cli_poetry_app = "cli_poetry_app.cli:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
